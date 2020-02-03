@@ -2,3 +2,6 @@
 .DS_Store
 list/test
 stack/test
+queue/test
+
+.vscode
