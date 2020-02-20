@@ -3,5 +3,6 @@
 list/test
 stack/test
 queue/test
+bintree/test
 
 .vscode

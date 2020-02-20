@@ -8,22 +8,23 @@
     左子树所有值小于根节点的值, 右子树所有值大于根节点值
  */
 
-typedef int ElementType;
+typedef int TreeElement;
 typedef struct TNode* BinTree;
 typedef BinTree Position;
 
 struct TNode {
-  ElementType value;
+  TreeElement value;
   BinTree left;
   BinTree right;
 };
 
 // 二叉搜索树API
-Position Find(BinTree BT, ElementType item);
+Position Find(BinTree BT, TreeElement item);
 Position FindMax(BinTree BT);
 Position FindMin(BinTree BT);
-BinTree Insert(BinTree BT, ElementType item);
-BinTree Delete(BinTree BT, ElementType item);
+BinTree Insert(BinTree BT, TreeElement item);
+BinTree Delete(BinTree BT, TreeElement item);
+
 
 // 二叉树的遍历 (非递归实现)
 void PreorderTraversal(BinTree BT);  // 先序遍历
